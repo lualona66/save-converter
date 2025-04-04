@@ -37,8 +37,9 @@ Easily accessed by clicking "Open Saves Folder" from Gopher64's gui
 
 
 * **Windows**: %USERPROFILE%\appdata\Roaming\gopher64\data\saves\
-
+ 
 * **Linux**: ~/.local/share/gopher64/saves/
+* **Flatpak**: ~/.var/app/io.github.gopher64.gopher64/data/gopher64/saves/
 
 **If using Gopher64 with portable.txt then save files will be located in /portable_data/data/saves/ next to your Gopher64 executable.**
 
