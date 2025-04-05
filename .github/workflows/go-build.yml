@@ -29,5 +29,5 @@ jobs:
         md5sum: false
         ldflags: "-w -s"
         pre_command: "apt-get update && apt-get install -y libgtk-3-dev"
-        extra_files: README.md LICENSE
+        extra_files: README.md LICENSE version.txt
         asset_name: save-converter-${{ matrix.goos }}-${{ matrix.goarch }}

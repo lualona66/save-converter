@@ -1,6 +1,12 @@
 # N64 Emulator Save Converter
 
-This software is only to be used for converting Project64 save files to a compatible format for use with [Gopher64](https://github.com/gopher64/gopher64).
+This software renames/converts N64 emulator save data to a compatible format for use with **Gopher64**.
+### Currently Supported Emulator Saves
+- Ares
+- Project64
+- RMG
+- Simple64
+
 
 ## Download:
 
@@ -12,9 +18,9 @@ This software is only to be used for converting Project64 save files to a compat
 ## Usage:
 
 - 1: Running save-converter.exe will present a file picker dialog box
-- 2: Pick your PJ64 save file  _( Supported save file formats: '.eep' '.mpk' '.sra' '.fla' )_
-- 3: Pick the relevant N64 rom  _( Supported rom formats: '.z64' '.n64' '.v64' )_
-- 4: The new converted save will be created in the same directory as the executable
+- 2: Pick the save file you want to copy data from  ( Supported save file formats: '.eep/.eeprom' '.mpk/.pak' '.sra/.ram' '.fla/.flash' )
+- 3: Pick the relevant N64 ROM  ( Supported ROM formats: '.z64' '.n64' '.v64' )
+- 4: A new save will be created in the same directory as the save-converter executable
 
 ## CLI Usage:
 
@@ -26,23 +32,22 @@ This will create a new file in the current directory with the converted save fil
 
 ## Gopher64 save file naming convention. ROMNAME-SHA256.extension
 
-* **ROMNAME**: Name taken from rom header. Special characters and trailing spaces removed
-* **SHA256**: Hash of rom file
+* **ROMNAME**: Name taken from ROM header. Special characters and trailing spaces removed
+* **SHA256**: Hash of ROM file
 * **.extension**: Save file format
 
 
 ## Gopher64 save location
 
-Easily accessed by clicking "Open Saves Folder" from Gopher64's gui
+Easily accessible by clicking "**Open Saves Folder**" from Gopher64's interface.
 
 
 * **Windows**: %USERPROFILE%\appdata\Roaming\gopher64\data\saves\
- 
+
 * **Linux**: ~/.local/share/gopher64/saves/
 * **Flatpak**: ~/.var/app/io.github.gopher64.gopher64/data/gopher64/saves/
 
 **If using Gopher64 with portable.txt then save files will be located in /portable_data/data/saves/ next to your Gopher64 executable.**
-
 
 
 
