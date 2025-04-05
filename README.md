@@ -31,13 +31,6 @@ save-converter.exe <save_file> <N64_rom_file>
 This will create a new file in the current directory with the converted save file.
 
 
-## gopher64 save file naming convention:
-### ROMNAME-SHA256.extension
-
-* **ROMNAME**: Name taken from ROM header. Special characters and trailing spaces removed
-* **SHA256**: Hash of ROM file
-* **.extension**: Save file format
-
 
 ## gopher64 save location:
 
@@ -51,3 +44,10 @@ Easily accessible by clicking "**Open Saves Folder**" from Gopher64's interface.
 
 **If using gopher64 with portable.txt then save files will be located in /portable_data/data/saves/ next to your Gopher64 executable.**
 
+
+## gopher64 save file naming convention:
+### ROMNAME-SHA256.extension
+
+* **ROMNAME**: Name taken from ROM header. Special characters and trailing spaces removed
+* **SHA256**: Hash of ROM file
+* **.extension**: Save file format
